@@ -27,10 +27,13 @@ public class Operators {
         //System.out.println("Менше: " + (a<b));
         //System.out.println("Більше або дорівнює: " + (a>=b));
         //System.out.println("Менше або дорівнює: " + (a<=b));
-                String str_1 = "2";
-                String str_2 = "10";
-        System.out.println(str_1.equals(str_2));
-        System.out.println(str_1 == (str_2));
+
+        //Також порівняйте два рядки, демонструючи різницю між використанням оператора == та методу equals().
+        //String str_1 = "2";
+        //String str_2 = "2";
+        //System.out.println(str_1.equals(str_2));
+         //System.out.println(str_1 == (str_2));
+
 
 
     }
