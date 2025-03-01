@@ -48,14 +48,14 @@ public class Methods {
 
     // Функція sumArray, яка повертає суму елементів масиву
     public static void main(String[] args) {
-        int[] number = {6, 4, 5, 6, 2, 2};
+        int[] number = {6, 4, 5, 6, 2, 2};//
         int result = sumArray(number);
         System.out.println("sum of array elements:" + result);
     }
 
 
     public static int sumArray(int[] array) {
-        int sum = 0;
+        int sum = 0;//
         for (int num : array) {
             sum += num;
         }
@@ -66,7 +66,7 @@ public class Methods {
     public static void main(String[] args) {
         int n = 5;
         int result = factorial(n);
-        System.out.println("Factorial of a number " + n + " Equals " + result);
+        System.out.println("Factorial of a number " + n + " Equals " + result);//
     }
 
     public static int factorial(int n) {
