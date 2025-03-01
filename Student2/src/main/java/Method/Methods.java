@@ -2,7 +2,7 @@ package Method;
 
 public class Methods {
 
-       public static void main(String[] args) {
+      /* public static void main(String[] args) {
             int sum = sum(2, 3);
             int multiply = multiply(2, 3);
             printHello();
@@ -33,8 +33,8 @@ public class Methods {
 
             }
 
-        }
-    //Створи метод square(int x), який приймає ціле число та повертає його квадрат.
+        }*/
+  /*  //Створи метод square(int x), який приймає ціле число та повертає його квадрат.
     public static void main(String[] args) {
         int number = 6;
         int result = square(number);
@@ -76,7 +76,7 @@ public class Methods {
         }
         return n * factorial(n - 1);
     }
-
+*/
 }
 
 
