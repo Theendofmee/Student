@@ -35,6 +35,7 @@ public class Methods {
 
     }
 
+    //
     public static void main(String[] args) {
         // Виклик методу square
         int numberSquare = 6;
