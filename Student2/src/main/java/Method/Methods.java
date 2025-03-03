@@ -3,40 +3,21 @@ package Method;
 public class Methods {
 
     public static void main(String[] args) {
-        int sum = sum(2, 3);
-        int multiply = multiply(2, 3);
+        // Виклик методу sum
+        int sumResult = sum(2, 3);
+        System.out.println("Sum: " + sumResult);
+
+        // Виклик методу multiply через інший метод
+        int multiplyResult = getProduct(2, 3);
+        System.out.println("Multiply: " + multiplyResult);
+
+        // Виклик методу printHello
         printHello();
-        int divide = divide(10, 5);
-        System.out.println(divide);
-    }
 
-    public static int sum(int a, int b) {
-        return a + b; //Створи метод sum(int a, int b), який приймає два цілі числа як параметри та повертає їх суму. Виклич цей метод у main() та виведи результат на екран.
-    }
+        // Виклик методу divide
+        int divideResult = divide(10, 5);
+        System.out.println("Divide: " + divideResult);
 
-    private static int multiply(int a, int b) {
-        return a * b; //Створи приватний метод multiply(int a, int b), який повертає добуток двох чисел. Виклич цей метод з іншого методу в тому ж класі.
-    }
-
-
-    public static void printHello() {
-        //System.out.println("Hello, World!");//Створи метод printHello(), який нічого не приймає і не повертає, але виводить на екран "Hello, World!". Виклич цей метод у main().
-    }
-
-    public static int divide(int a, int b) { //Створи метод divide(int a, int b), який повертає результат ділення a на b. Якщо b дорівнює нулю, метод повинен повернути 0 і вивести повідомлення: "Division by zero is not allowed.".
-        if (b == 0) {
-            System.out.println("Division by zero is not allowed.");
-            return 0;
-        } else {
-            double divide = a / b;
-            return (int) divide;
-
-        }
-
-    }
-
-    //
-    public static void main(String[] args) {
         // Виклик методу square
         int numberSquare = 6;
         int resultSquare = square(numberSquare);
@@ -51,6 +32,35 @@ public class Methods {
         int numberFactorial = 5;
         int resultFactorial = factorial(numberFactorial);
         System.out.println("Factorial of a number " + numberFactorial + " Equals " + resultFactorial);
+    }
+
+    // Метод sum, який повертає суму двох чисел
+    public static int sum(int a, int b) {
+        return a + b;
+    }
+
+    // Приватний метод multiply, який повертає добуток двох чисел
+    private static int multiply(int a, int b) {
+        return a * b;
+    }
+
+    // Публічний метод для виклику приватного методу multiply
+    public static int getProduct(int a, int b) {
+        return multiply(a, b);
+    }
+
+    // Метод printHello, який виводить "Hello, World!"
+    public static void printHello() {
+        System.out.println("Hello, World!");
+    }
+
+    // Метод divide, який повертає результат ділення a на b
+    public static int divide(int a, int b) {
+        if (b == 0) {
+            System.out.println("Division by zero is not allowed.");
+            return 0;
+        }
+        return a / b;
     }
 
     // Метод square, який повертає квадрат числа
